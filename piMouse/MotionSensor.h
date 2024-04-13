@@ -7,6 +7,8 @@
 #include <stdint.h>
 #include <string.h>
 #include <math.h>
+#include <pigpio.h> 
+#include <iostream>
 
 #include "helper_3dmath.h"
 #include "inv_mpu.h"

@@ -1,12 +1,21 @@
 #include "MotionSensor.h"
+#include <iostream>
+#include <pigpio.h>
 
+#define MPU_INT_PIN 17
 
 #define wrap_180(x) (x < -180 ? x+360 : (x > 180 ? x - 360: x))
 #define delay_ms(a)    usleep(a*1000)
 
 MotionSensor::MotionSensor()
 {
-
+	if (gpioInitialise() < 0) {
+		std::cerr << "pigpio initialization failed." << std::endl;
+	}
+}
+// MotionSensor destructor
+MotionSensor::~MotionSensor() {
+	gpioTerminate();
 }
 
 int MotionSensor::ms_open() 
@@ -110,7 +119,16 @@ int MotionSensor::ms_open()
 	printf("fulfillment.\n");
 
 	initialized = 1;
+	// Set GPIO mode and interrupts
+	gpioSetMode(MPU_INT_PIN, PI_INPUT);// Set GPIOs as inputs
+	gpioSetPullUpDown(MPU_INT_PIN, PI_PUD_DOWN);// Setting up internal dropdowns
+	gpioSetISRFuncEx(MPU_INT_PIN, RISING_EDGE, 0, interruptHandler, this);// Register the interrupt handler
 	return 0;
+}
+
+void interruptHandler(int gpio, int level, uint32_t tick, void* user) {
+	MotionSensor* sensor = reinterpret_cast<MotionSensor*>(user);
+	sensor->ms_update();
 }
 
 int MotionSensor::ms_update() 
@@ -120,36 +138,40 @@ int MotionSensor::ms_update()
 		return -1;
 	}
 
-	while (dmp_read_fifo(g,a,_q,&sensors,&fifoCount)!=0); //gyro and accel can be null because of being disabled in the efeatures
-	q = _q;
-	GetGravity(&gravity, &q);
-	GetYawPitchRoll(ypr, &q, &gravity);
+	if (dmp_read_fifo(g, a, _q, &sensors, &fifoCount) == 0) {
+		q = _q;
+		GetGravity(&gravity, &q);
+		GetYawPitchRoll(ypr, &q, &gravity);
 
-	mpu_get_temperature(&t);
-	temp=(float)t/65536L;
+		mpu_get_temperature(&t);
+		temp = (float)t / 65536L;
 
-	mpu_get_compass_reg(c);
+		mpu_get_compass_reg(c);
 
-	//scaling for degrees output
-	for (int i=0;i<DIM;i++){
-		ypr[i]*=180/M_PI;
+		//scaling for degrees output
+		for (int i = 0; i < DIM; i++) {
+			ypr[i] *= 180 / M_PI;
+		}
+
+		//unwrap yaw when it reaches 180
+		ypr[0] = wrap_180(ypr[0]);
+
+		//change sign of Pitch, MPU is attached upside down
+		ypr[1] *= -1.0;
+
+		//0=gyroX, 1=gyroY, 2=gyroZ
+		//swapped to match Yaw,Pitch,Roll
+		//Scaled from deg/s to get tr/s
+		for (int i = 0; i < DIM; i++) {
+			gyro[i] = (float)(g[DIM - i - 1]) / 131.0 / 360.0;
+			accel[i] = (float)(a[DIM - i - 1]);
+			compass[i] = (float)(c[DIM - i - 1]);
+		}
+	}else {
+		// Log or handle error
+		std::cerr << "Failed to read FIFO data." << std::endl;
 	}
-
-	//unwrap yaw when it reaches 180
-	ypr[0] = wrap_180(ypr[0]);
-
-	//change sign of Pitch, MPU is attached upside down
-	ypr[1]*=-1.0;
-
-	//0=gyroX, 1=gyroY, 2=gyroZ
-	//swapped to match Yaw,Pitch,Roll
-	//Scaled from deg/s to get tr/s
-	for (int i=0;i<DIM;i++){
-		gyro[i]   = (float)(g[DIM-i-1])/131.0/360.0;
-		accel[i]   = (float)(a[DIM-i-1]);
-		compass[i] = (float)(c[DIM-i-1]);
-	}
-
+	
 	return 0;
 }
 
