@@ -4,6 +4,15 @@
 With the growth of the internet industry, the live broadcasting sector has expanded rapidly. Traditional mice, which require a desktop environment, are no longer sufficient for all scenarios in the life of a live streamer. For example, outdoor broadcasters or performing artists often face the challenge of not being able to rely on a fixed desktop surface while performing. To address this issue, we have developed a gesture-controlled mouse that allows broadcasters to freely control their live stream in any setting without being limited by a desktop surface.
 
 ### Project Members
+| Name | Email | Contribution | GitHub |
+|----------|----------|----------|----------|
+| Jianhua Dong |2938631D@student.gla.ac.uk | Row1Col3 | Row1Col4 |
+| Ao Liu | 2858676L@student.gla.ac.uk | Row2Col3 | Row2Col4 |
+| Lixun Ma | 2929238M@student.gla.ac.uk | Row3Col3 | Row3Col4 |
+| Lincheng Li | 2510846L@student.gla.ac.uk | Row4Col3 | Row4Col4 |
+| Zixiang Chang | 2808158C@student.gla.ac.uk | Row5Col3 | Row5Col4 |
+
+
 ### Key Features
 1. No Desktop Constraints: This mouse utilizes advanced sensor technology to operate on any surface or even in mid-air, greatly enhancing flexibility in use, particularly suited for outdoor broadcasters and performing artists who operate without a fixed work surface.
 2. High Portability and Wireless Connectivity: Designed to be lightweight and easy to carry, it supports wireless connectivity and a built-in Bluetooth module, offering greater freedom of movement. This allows the broadcaster to maintain smooth live streaming operations on the go without the limitations of traditional wired connections.
