@@ -6,7 +6,7 @@ With the growth of the internet industry, the live broadcasting sector has expan
 ### Project Members
 | Name | Email | Contribution | GitHub |
 |----------|----------|----------|----------|
-| Jianhua Dong |2938631D@student.gla.ac.uk | Row1Col3 | Row1Col4 |
+| Jianhua Dong |2938631D@student.gla.ac.uk | Row1Col3 |[ yokinoh](https://github.com/yokinoh) |
 | Ao Liu | 2858676L@student.gla.ac.uk | Row2Col3 | [trashcanbomb](https://github.com/trashcanbomb) |
 | Lixun Ma | 2929238M@student.gla.ac.uk | Row3Col3 | Row3Col4 |
 | Lincheng Li | 2510846L@student.gla.ac.uk | Row4Col3 | Row4Col4 |
