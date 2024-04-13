@@ -19,95 +19,95 @@ int MotionSensor::ms_open()
 	}
 
 	// initialize device
-	printf("初始化MPU...请等待\n");
+	printf("Initializing the MPU... Please wait.\n");
 	if (mpu_init(NULL) != 0) {
-		printf("MPU初始化失败.\n");
+		printf("MPU initialization failure.\n");
 		return -1;
 	}
-	printf("MPU初始化成功.");
+	printf("MPU initialization is successful..");
 
-	printf("设置MPU传感器...请等待\n");
+	printf("Setting up the MPU sensor... Please wait.\n");
     dump_init();
 	if (mpu_set_sensors(INV_XYZ_GYRO|INV_XYZ_ACCEL)!=0) {
-		printf("MPU传感器设置失败.\n");
+		printf("MPU sensor setting failure.\n");
 		return -1;
 	}
-	printf("MPU传感器设置成功.\n");
+	printf("MPU Sensor Setting Successful.\n");
 
-	printf("设置陀螺仪灵敏度...请等待\n");
+	printf("Setting gyro sensitivity... Please wait.\n");
 	if (mpu_set_gyro_fsr(2000)!=0) {
-		printf("陀螺仪精度设置失败.\n");
+		printf("Failed to set gyro accuracy.\n");
 		return -1;
 	}
-	printf("陀螺仪精度设置成功.\n");
+	printf("Gyroscope accuracy set successfully.\n");
 
-	printf("设置加速度计灵敏度...请等待\n");
+	printf("Setting accelerometer sensitivity... Please wait.\n");
 	if (mpu_set_accel_fsr(2)!=0) {
-		printf("加速度计灵敏度设置失败.\n");
+		printf("Accelerometer sensitivity setting failed.\n");
 		return -1;
 	}
-	printf("加速度计灵敏度设置成功.\n");
+	printf("Accelerometer sensitivity set successfully.\n");
 
 	// verify connection
-	printf("执行MPU开机命令...请等待\n");
+	printf("Execute the MPU boot command... Please wait.\n");
 	mpu_get_power_state(&devStatus);
-	printf(devStatus ? "MPU6050 连接成功.\n" : "MPU6050 连接失败. %u\n",devStatus);
+	printf(devStatus ? "MPU6050 Connection Successful.\n" : "MPU6050 Connection Failure. %u\n",devStatus);
 
 	//fifo config
-	printf("设置MPU FIFO...请等待\n");
+	printf("Setting the MPU FIFO... Please wait\n");
 	if (mpu_configure_fifo(INV_XYZ_GYRO|INV_XYZ_ACCEL)!=0) {
 		printf("MPU fifo 设置失败.\n");
 		return -1;
 	}
-	printf("MPU fifo 设置成功.\n");
+	printf("MPU fifo set successfully.\n");
 
 
 	// load and configure the DMP
-	printf("读取DMP固件...请等待\n");
+	printf("Reading DMP firmware... Please wait.\n");
 	if (dmp_load_motion_driver_firmware()!=0) {
-		printf("DMP固件打开失败.\n");
+		printf("DMP firmware open failure.\n");
 		return -1;
 	}
-	printf("DMP固件打开成功.\n");
+	printf("DMP firmware opened successfully.\n");
 
 
-	printf("正在激活DMP...请等待\n");
+	printf("Activating DMP... Please wait.\n");
 	if (mpu_set_dmp_state(1)!=0) {
 		printf("DMP激活失败.\n");
 		return -1;
 	}
-	printf("DMP激活成功.\n");
+	printf("DMP activation successful.\n");
 
 	//dmp_set_orientation()
 	//if (dmp_enable_feature(DMP_FEATURE_LP_QUAT|DMP_FEATURE_SEND_RAW_GYRO)!=0) {
-	printf("设置DMP...请等待\n");
+	printf("Setting the DMP... Please wait.\n");
 	if (dmp_enable_feature(DMP_FEATURE_6X_LP_QUAT|DMP_FEATURE_SEND_RAW_ACCEL|DMP_FEATURE_SEND_CAL_GYRO|DMP_FEATURE_GYRO_CAL)!=0) {
-		printf("DMP特征提取失败.\n");
+		printf("DMP feature extraction failed.\n");
 		return -1;
 	}
-	printf("DMP特征提取成功.\n");
+	printf("DMP feature extraction successful.\n");
 
-	printf("设置DMP FIFO采样率...请等待\n");
+	printf("Setting the DMP FIFO sample rate... Please wait\n");
 	if (dmp_set_fifo_rate(rate)!=0) {
-		printf("DMP FIFO采样率设置失败.\n");
+		printf("DMP FIFO Sample Rate Setting Failure.\n");
 		return -1;
 	}
-	printf("DMP FIFO采样率设置成功.\n");
+	printf("DMP FIFO Sample Rate Setting Successful.\n");
 
 
-	printf("重置FIFO消息队列...请等待\n");
+	printf("Reset FIFO message queue... Please wait\n");
 	if (mpu_reset_fifo()!=0) {
-		printf("FIFO消息队列重置失败.\n");
+		printf("FIFO message queue reset failure.\n");
 		return -1;
 	}
-	printf("FIFO消息队列重置成功.\n");
+	printf("FIFO message queue reset successful.\n");
 
-	printf("检测中... ");
+	printf("under test... ");
 	do {
 		delay_ms(1000/rate);  //dmp will habve 4 (5-1) packets based on the fifo_rate
 		r=dmp_read_fifo(g,a,_q,&sensors,&fifoCount);
 	} while (r!=0 || fifoCount<5); //packtets!!!
-	printf("完成.\n");
+	printf("fulfillment.\n");
 
 	initialized = 1;
 	return 0;
@@ -116,7 +116,7 @@ int MotionSensor::ms_open()
 int MotionSensor::ms_update() 
 {
 	if (!dmpReady) {
-		printf("错误: DMP未准备完成.\n");
+		printf("Error: DMP not ready.\n");
 		return -1;
 	}
 
