@@ -41,7 +41,9 @@ On Windows or Linux platforms, after plugging the device receiver into the USB p
 ## Project Overview
 
 ### Project Hardware Overview
+The live broadcast assistant has been meticulously designed to ensure seamless integration and communication between its components. At the heart of the system is the Raspberry Pi, which acts as the central processing unit, coordinating commands and data flow.
 ![1](https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/93156c6f-14b7-43c1-a2cd-0ebcdb054852)
+####Raspberry Pi 3b+：
 
 ### Project Code Introduction
 bluetoothsender.cpp
