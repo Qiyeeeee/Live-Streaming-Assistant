@@ -21,10 +21,12 @@ void BluetoothSender::sendMouseMsg(unsigned char *data,int len)
 
 bool BluetoothSender::open()
 {
-    if ((fd = serialOpen(_portname, _baudrate)) < 0) //初始化串口并获取文件描述符保存到fd变量里
+    if ((fd = serialOpen(_portname, _baudrate)) < 0) //Initialise the serial port and get the file descriptor and save it to the fd variable.
     {
        std::cout<<"Unable to open serial device"<<std::endl;
        return false;
     }
     return true;
 }
+
+
