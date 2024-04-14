@@ -1,6 +1,6 @@
 # Live-Streaming-Assistant
 
-### Project Introduction:
+## Project Introduction:
 With the growth of the internet industry, the live broadcasting sector has expanded rapidly. Traditional mice, which require a desktop environment, are no longer sufficient for all scenarios in the life of a live streamer. For example, outdoor broadcasters or performing artists often face the challenge of not being able to rely on a fixed desktop surface while performing. To address this issue, we have developed a gesture-controlled mouse that allows broadcasters to freely control their live stream in any setting without being limited by a desktop surface.
 
 ### Project Members
@@ -38,7 +38,7 @@ Role: As the mouse uses wireless Bluetooth technology for connectivity, it requi
 ### Installation Tutorial
 -
 -
-### Project Overview
+## Project Overview
 
 
 ### bluetoothsender.cpp
