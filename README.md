@@ -26,7 +26,7 @@ With the growth of the internet industry, the live broadcasting sector has expan
 | Jianhua Dong |2938631D@student.gla.ac.uk | Building architecture and code writing |[ yokinoh](https://github.com/yokinoh) |
 | Ao Liu | 2858676L@student.gla.ac.uk | Coding and Documentation | [trashcanbomb](https://github.com/trashcanbomb) |
 | Lixun Ma | 2929238M@student.gla.ac.uk | Hardware setup and testing | [Matteo](https://github.com/Matteolx98) |
-| Lincheng Li | 2510846L@student.gla.ac.uk | Code Maintenance and Documentation Writing | Row4Col4 |
+| Lincheng Li | 2510846L@student.gla.ac.uk | Code Maintenance and Documentation Writing | [a634604125](https://github.com/a634604125) |
 | Zixiang Chang | 2808158C@student.gla.ac.uk | Code writing, bug fixing | [Qiyeeeee](https://github.com/Qiyeeeee) |
 
 
