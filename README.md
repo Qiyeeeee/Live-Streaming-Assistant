@@ -11,7 +11,8 @@ Initial version, basic mouse functionality is already available.
 ****
 
 # Live-Streaming-Assistant
-![logo](https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/110274822/f8f8dbad-187a-492c-9234-444863df4100)
+![logo icon](https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/110274822/947f9ee0-db9a-431c-bd17-f86fce7e6ec4)
+
 
 ## Project Introduction:
 With the growth of the internet industry, the live broadcasting sector has expanded rapidly. Traditional mice, which require a desktop environment, are no longer sufficient for all scenarios in the life of a live streamer. For example, outdoor broadcasters or performing artists often face the challenge of not being able to rely on a fixed desktop surface while performing. To address this issue, we have developed a gesture-controlled mouse that allows broadcasters to freely control their live stream in any setting without being limited by a desktop surface.
