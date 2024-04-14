@@ -46,7 +46,13 @@ Role: Extends the Raspberry Pi's connectivity capabilities, enabling communicati
 5. Power Module - Waveshare Raspberry Pi Expansion Board Lithium Battery Mobile Power Supply
 Function: This expansion board has a built-in lithium battery that provides a stable 5V power supply to the Raspberry Pi and the connected Bluetooth module. This power design supports wireless operation, ensuring that the device can continue to work without an external power supply.
 Role: As the mouse uses wireless Bluetooth technology for connectivity, it requires a reliable internal power system to ensure continuity and efficiency during mobile use. The use of a mobile power supply greatly increases the device's freedom and flexibility, particularly suitable for use in outdoor broadcasting or remote operations, without worrying about connection interruptions due to power issues.
+
 ### Project Video Demonstration
+
+https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/ff3dcaa1-c6c2-445a-a0d8-bb16e29dfb49
+
+
+
 ### Installation Tutorial
 On Windows or Linux platforms, after plugging the device receiver into the USB port. Wait for about 2 minutes and it is ready to use.
 
