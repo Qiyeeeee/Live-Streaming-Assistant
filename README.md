@@ -1,3 +1,14 @@
+# Project Version Update
+## Version 2.0
+Replaced WiringPi with Pigpio, and now the mouse has sensitivity adjustment.
+
+## Version 1.0
+Performance and responsiveness have been further improved and optimised by changing the way sensor data is processed (event interrupt).
+
+## Version 0.9
+Initial version, basic mouse functionality is already available.
+
+
 # Live-Streaming-Assistant
 
 ## Project Introduction:
