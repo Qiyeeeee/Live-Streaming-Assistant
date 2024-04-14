@@ -60,6 +60,19 @@ https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/e0b2d20f-f0
 ### Installation Tutorial
 On Windows or Linux platforms, after plugging the device receiver into the USB port. Wait for about 2 minutes and it is ready to use.
 
+## Software Installation Guide on Linux
+
+### Step 1: Download the Files via Git
+```markdown
+git clone https://github.com/Qiyeeeee/Live-Streaming-Assistant
+```
+### Step 2: Instal
+```markdown
+cmake ./Live-Streaming-Assistant
+make
+sudo ./Live-Streaming-Assistant
+```
+
 ## Project Overview
 
 ### Project Hardware Overview
