@@ -54,11 +54,10 @@ The live broadcast assistant has been meticulously designed to ensure seamless i
 
 
 ### Project Code Introduction
-bluetoothsender.cpp
-BluetoothSender, which sends data through the serial port, can be used to communicate with any device connected through the serial port, including but not limited to Bluetooth modules.
+**main.cpp**: Responsible for processing the received sensor data and editing it as Msg waiting for the Bluetooth module to send it.
 
-MotionSensor.cpp
-MotionSensor implements the interaction with the MPU sensors, including initialisation, data reading, and basic data processing.
+**bluetoothsender.cpp**: BluetoothSender, which sends data through the serial port, can be used to communicate with any device connected through the serial port, including but not limited to Bluetooth modules.
 
-CMakeLists.txt
-Used to configure the CMake project.
+**MotionSensor.cpp**: MotionSensor implements the interaction with the MPU sensors, including initialisation, data reading, and basic data processing.
+
+**CMakeLists.txt**: Used to configure the CMake project.
