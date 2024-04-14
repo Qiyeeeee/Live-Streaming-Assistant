@@ -48,8 +48,7 @@ Function: This expansion board has a built-in lithium battery that provides a st
 Role: As the mouse uses wireless Bluetooth technology for connectivity, it requires a reliable internal power system to ensure continuity and efficiency during mobile use. The use of a mobile power supply greatly increases the device's freedom and flexibility, particularly suitable for use in outdoor broadcasting or remote operations, without worrying about connection interruptions due to power issues.
 
 ### Project Video Demonstration
-
-https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/ff3dcaa1-c6c2-445a-a0d8-bb16e29dfb49
+https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/e0b2d20f-f022-49d0-ae5a-196ced8194c6
 
 
 
