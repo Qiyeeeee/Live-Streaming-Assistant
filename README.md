@@ -1,3 +1,15 @@
+# Project Version Update
+## Version 2.0
+Replaced WiringPi with Pigpio, and now the mouse has sensitivity adjustment.
+
+## Version 1.0
+Performance and responsiveness have been further improved and optimised by changing the way sensor data is processed (event interrupt).
+
+## Version 0.9
+Initial version, basic mouse functionality is already available.
+
+****
+
 # Live-Streaming-Assistant
 
 ## Project Introduction:
@@ -34,7 +46,12 @@ Role: Extends the Raspberry Pi's connectivity capabilities, enabling communicati
 5. Power Module - Waveshare Raspberry Pi Expansion Board Lithium Battery Mobile Power Supply
 Function: This expansion board has a built-in lithium battery that provides a stable 5V power supply to the Raspberry Pi and the connected Bluetooth module. This power design supports wireless operation, ensuring that the device can continue to work without an external power supply.
 Role: As the mouse uses wireless Bluetooth technology for connectivity, it requires a reliable internal power system to ensure continuity and efficiency during mobile use. The use of a mobile power supply greatly increases the device's freedom and flexibility, particularly suitable for use in outdoor broadcasting or remote operations, without worrying about connection interruptions due to power issues.
+
 ### Project Video Demonstration
+https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/e0b2d20f-f022-49d0-ae5a-196ced8194c6
+
+
+
 ### Installation Tutorial
 On Windows or Linux platforms, after plugging the device receiver into the USB port. Wait for about 2 minutes and it is ready to use.
 
