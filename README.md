@@ -96,3 +96,8 @@ The live broadcast assistant has been meticulously designed to ensure seamless i
 **MotionSensor.cpp**: MotionSensor implements the interaction with the MPU sensors, including initialisation, data reading, and basic data processing.
 
 **CMakeLists.txt**: Used to configure the CMake project.
+
+## Official Account
+<p align="center">
+    <img alt="ins" src="https://i.postimg.cc/HjGQQDSP/20240414154800.jpg" width="250" height="250" style="margin-bottom: 10px;">
+</p>
