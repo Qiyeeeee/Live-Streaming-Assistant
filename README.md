@@ -10,7 +10,9 @@ Initial version, basic mouse functionality is already available.
 
 ****
 
-# Live-Streaming-Assistant
+# <p><b>Live-Streaming-Assistant</b>   <i>--wearable mouse</i></p>
+
+
 <p align="center">
     <img alt="logo" src="https://i.postimg.cc/yNTRJ4Y6/logo-icon.jpg" width="150" height="150" style="margin-bottom: 10px;">
 </p>
