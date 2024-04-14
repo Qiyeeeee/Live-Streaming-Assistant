@@ -48,4 +48,4 @@ BluetoothSender, which sends data through the serial port, can be used to commun
 MotionSensor implements the interaction with the MPU sensors, including initialisation, data reading, and basic data processing.
 
 ### CMakeLists.txt
-Used to configure the CMake project, where some of the source files that make up the executable have not been uploaded (3.6.2024)
+Used to configure the CMake project.
