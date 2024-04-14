@@ -8,6 +8,7 @@ Performance and responsiveness have been further improved and optimised by chang
 ## Version 0.9
 Initial version, basic mouse functionality is already available.
 
+****
 
 # Live-Streaming-Assistant
 
