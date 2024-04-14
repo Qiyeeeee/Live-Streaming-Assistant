@@ -39,6 +39,7 @@ Role: As the mouse uses wireless Bluetooth technology for connectivity, it requi
 On Windows or Linux platforms, after plugging the device receiver into the USB port. Wait for about 2 minutes and it is ready to use.
 
 ## Project Overview
+![1](https://github.com/Qiyeeeee/Live-Streaming-Assistant/assets/43346136/93156c6f-14b7-43c1-a2cd-0ebcdb054852)
 
 
 ### bluetoothsender.cpp
