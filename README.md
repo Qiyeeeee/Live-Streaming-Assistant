@@ -1,6 +1,6 @@
 # Live-Streaming-Assistant
 
-### Project Introduction:
+## Project Introduction:
 With the growth of the internet industry, the live broadcasting sector has expanded rapidly. Traditional mice, which require a desktop environment, are no longer sufficient for all scenarios in the life of a live streamer. For example, outdoor broadcasters or performing artists often face the challenge of not being able to rely on a fixed desktop surface while performing. To address this issue, we have developed a gesture-controlled mouse that allows broadcasters to freely control their live stream in any setting without being limited by a desktop surface.
 
 ### Project Members
@@ -36,9 +36,9 @@ Function: This expansion board has a built-in lithium battery that provides a st
 Role: As the mouse uses wireless Bluetooth technology for connectivity, it requires a reliable internal power system to ensure continuity and efficiency during mobile use. The use of a mobile power supply greatly increases the device's freedom and flexibility, particularly suitable for use in outdoor broadcasting or remote operations, without worrying about connection interruptions due to power issues.
 ### Project Video Demonstration
 ### Installation Tutorial
--
--
-### Project Overview
+On Windows or Linux platforms, after plugging the device receiver into the USB port. Wait for about 2 minutes and it is ready to use.
+
+## Project Overview
 
 
 ### bluetoothsender.cpp
@@ -48,4 +48,4 @@ BluetoothSender, which sends data through the serial port, can be used to commun
 MotionSensor implements the interaction with the MPU sensors, including initialisation, data reading, and basic data processing.
 
 ### CMakeLists.txt
-Used to configure the CMake project, where some of the source files that make up the executable have not been uploaded (3.6.2024)
+Used to configure the CMake project.
