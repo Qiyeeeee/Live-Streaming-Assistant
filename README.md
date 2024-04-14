@@ -23,11 +23,11 @@ With the growth of the internet industry, the live broadcasting sector has expan
 ### Project Members
 | Name | Email | Contribution | GitHub |
 |----------|----------|----------|----------|
-| Jianhua Dong |2938631D@student.gla.ac.uk | Row1Col3 |[ yokinoh](https://github.com/yokinoh) |
-| Ao Liu | 2858676L@student.gla.ac.uk | Row2Col3 | [trashcanbomb](https://github.com/trashcanbomb) |
-| Lixun Ma | 2929238M@student.gla.ac.uk | Row3Col3 | [Matteo](https://github.com/Matteolx98) |
-| Lincheng Li | 2510846L@student.gla.ac.uk | Row4Col3 | Row4Col4 |
-| Zixiang Chang | 2808158C@student.gla.ac.uk | Row5Col3 | [Qiyeeeee](https://github.com/Qiyeeeee) |
+| Jianhua Dong |2938631D@student.gla.ac.uk | Building architecture and code writing |[ yokinoh](https://github.com/yokinoh) |
+| Ao Liu | 2858676L@student.gla.ac.uk | Coding and Documentation | [trashcanbomb](https://github.com/trashcanbomb) |
+| Lixun Ma | 2929238M@student.gla.ac.uk | Hardware setup and testing | [Matteo](https://github.com/Matteolx98) |
+| Lincheng Li | 2510846L@student.gla.ac.uk | Code Maintenance and Documentation Writing | Row4Col4 |
+| Zixiang Chang | 2808158C@student.gla.ac.uk | Code writing, bug fixing | [Qiyeeeee](https://github.com/Qiyeeeee) |
 
 
 ### Key Features
